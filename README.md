@@ -81,7 +81,7 @@ This repo includes a Render Blueprint at [render.yaml](render.yaml).
      - `CLOUDINARY_API_KEY`
      - `CLOUDINARY_API_SECRET`
 4. Deploy and confirm:
-   - `https://<your-render-service>.onrender.com/health` returns `{ ok: true }`
+   - `https://fullstackwebblog-2hmx.onrender.com/health` returns `{ ok: true }`
 
 After your frontend is deployed, update CORS allowlist:
 - Set `CLIENT_ORIGIN` to a comma-separated list, for example:
