@@ -55,6 +55,16 @@ Frontend runs on `http://localhost:5173`.
 - JWT logout is client-side (token removal). The `/api/auth/logout` endpoint returns a success response for completeness.
 - If Cloudinary is not configured, creating/editing posts *without* an image works, but uploading an image returns an error.
 
+## Postman testing
+Import these into Postman:
+- Collection: [postman/FullStackWebBlog.postman_collection.json](postman/FullStackWebBlog.postman_collection.json)
+- Environment: [postman/FullStackWebBlog.local.postman_environment.json](postman/FullStackWebBlog.local.postman_environment.json)
+
+Flow:
+- Run **Auth → Signup** (or **Login**) to auto-save `token` in the environment.
+- Run **Posts → Create post** to auto-save `postId`.
+- Run **Get single / Update / Delete** using that `postId`.
+
 ## Deployment
 
 ### Backend (Render)
